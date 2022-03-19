@@ -41,3 +41,9 @@ function playRound(playerSelection) { // Takes both player and computer choice, 
 
 }
 
+function game() {
+    for (let i = 0; i<5 ; i++) {
+        console.log(playRound(prompt("Rock, Paper or Scissors?")));
+    }
+}
+
