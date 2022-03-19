@@ -1,6 +1,8 @@
 function computerPlay() { // Generates a random number between 1 and 3, and turns it into a corresponding rps choice
 
-    if (Math.floor(Math.random() * 3) + 1 === 1) {
+    rpsNumber = Math.floor(Math.random() * 3) + 1
+
+    if (rpsNumber === 1) {
         return "rock";
     } else if (rpsNumber===2) {
         return "paper";
@@ -38,3 +40,4 @@ function playRound(playerSelection) { // Takes both player and computer choice, 
     }
 
 }
+
