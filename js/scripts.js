@@ -23,7 +23,7 @@ function rockPaperOrScissors (playerSelection) { // Takes players input, turns i
     }
 }
 
-function rps(playerSelection) { // Takes both player and computer choice, substracts computer choice from players and if result is either 1 or -2 player wins, else computer wins
+function playRound(playerSelection) { // Takes both player and computer choice, substracts computer choice from players and if result is either 1 or -2 player wins, else computer wins
 
     let computerSelection = computerPlay()
 
