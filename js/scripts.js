@@ -1,3 +1,6 @@
+let playerScore = 0;
+let computerScore = 0;
+
 function computerPlay() { // Generates a random number between 1 and 3, and turns it into a corresponding rps choice
 
     rpsNumber = Math.floor(Math.random() * 3) + 1
@@ -32,18 +35,33 @@ function playRound(playerSelection) { // Takes both player and computer choice, 
     let result = rockPaperOrScissors(playerSelection)-rockPaperOrScissors(computerSelection);
 
     if (result === 1 || result === -2) {
+        playerScore++;
         return "You've won! " + playerSelection.toLowerCase().charAt(0).toUpperCase() + playerSelection.toLowerCase().slice(1) + " beats " + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1);
     } else if (result === 0) {
         return "It's a draw!";
     } else {
+        computerScore++;
         return "You've lost. "  + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1) + " beats " + playerSelection.toLowerCase().charAt(0).toUpperCase() + playerSelection.toLowerCase().slice(1);
     }
 
 }
 
-function game() {
+function game() { // Play rps while keeping score by using global variables. Reset em to 0 every time game is played
+
+    playerScore = 0;
+    computerScore = 0;
+
     for (let i = 0; i<5 ; i++) {
         console.log(playRound(prompt("Rock, Paper or Scissors?")));
     }
-}
 
+    if (playerScore > computerScore) {
+        return "You've won! " + playerScore + " to " + computerScore;
+    } else if (computerScore > playerScore){
+        
+        return "You've lost. " + playerScore + " to " + computerScore;
+    } else {
+        return "It's a draw!"
+    }
+
+}
