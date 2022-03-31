@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: rgb(77, 77, 77);
+}
+
+.result {
+    height: 440px;
+    width: 100%;
+}
+
+.player-choices {
+    height: 80%;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-choices > div {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(55, 55, 55);
+}
+
+.current-score {
+    height: 20%;
+    background-color: rgb(71, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-score > p {
+    font-size: 24px;
+    color: rgb(212, 212, 212);
+}
+
+.dash {
+    padding: 0 16px;
+}
+
+.button-holder {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+}
+
+.selection {
+    height: 120px;
+    width: 120px;
+    padding: 16px 16px;
+    font-size: 36px;
+    border: 2px solid rgb(67, 77, 43);
+    border-radius: 16px;
+    background-color: rgb(109, 134, 76);
+
+}
