@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/scripts.js"></script>
+    <script src="./js/scripts.js" defer></script>
     <link rel="stylesheet" href="./css/styles.css">
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
+    <h1>Rock Paper Scissors The Game That Didn't Take Too Long To Make Regardless Of What The Man In The Sink Says</h1>
     <div class="result">
 
         <div class="player-choices">
-            <div class="pc-choice"></div>
-            <div class="cp-choice"></div>
+            <div>
+                <div class="pc-choice"></div>
+                <div class="cp-choice"></div>
+            </div>
+            <p class="round-result"></p>
         </div>
 
         <div class="current-score">
@@ -24,9 +28,9 @@
 
     </div>
     <div class="button-holder">
-        <button type="button" class="selection" data-value="1">&#129704;</button>
-        <button type="button" class="selection" data-value="2">&#128196;</button>
-        <button type="button" class="selection" data-value="3">&#9996;</button>
+        <button type="button" class="rock">&#129704;</button>
+        <button type="button" class="paper">&#128196;</button>
+        <button type="button" class="scissors">&#9996;</button>
     </div>
 </body>
 </html>
