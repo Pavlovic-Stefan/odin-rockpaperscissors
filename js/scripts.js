@@ -123,23 +123,3 @@ function playRound(playerSelection) { // Takes both player and computer choice, 
     }
 
 }
-
-function game() { // Play rps while keeping score by using global variables. Reset em to 0 every time game is played
-
-    playerScore = 0;
-    computerScore = 0;
-
-    for (let i = 0; i<5 ; i++) {
-        console.log(playRound(prompt("Rock, Paper or Scissors?")));
-    }
-
-    if (playerScore > computerScore) {
-        return "You've won! " + playerScore + " to " + computerScore;
-    } else if (computerScore > playerScore){
-        
-        return "You've lost. " + playerScore + " to " + computerScore;
-    } else {
-        return "It's a draw!"
-    }
-
-}
